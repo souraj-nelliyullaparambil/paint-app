@@ -25,10 +25,11 @@
     />
   </head>
   <body>
+    <div>
     <header class="content">
-      <h1 class="text-center">PAINT</h1>
+      <h1 class="text-center">PENCIL DRAWING</h1>
     </header>
-    <nav class="d-flex ms-4 mb-1 container" >
+    <nav class="d-flex  mb-1 container" >
       <input type="color" id="color" class="form-control form-control-color "/>
       <input type="number" id="thickness" value="3" min="0" max="100" class="form-select"/>
       
@@ -48,11 +49,10 @@
 
       <button type="button" class="btn btn-outline-success" id="clear" title="clear">
         <i class="fa-solid fa-delete-left"></i>
-      </button>
-
-   
+      </button>   
     </nav>
     <canvas id="canvas" style="border: 1px solid black" ></canvas>
+  </div>
     <!-- //javascript -->
     <script src="paint.js"></script>
     <!-- bootstrap -->
