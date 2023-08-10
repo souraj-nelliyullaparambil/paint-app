@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+div{
+    background-color: rgb(70, 10, 10);
+}
+nav{
+    column-gap: 10px;
+}
+select{
+    width: 130px!important
+}
+#thickness{
+    width: 90px!important
+}
+canvas{
+    box-sizing: border-box;
+    margin: 10px;
+}
+@media (max-width:600px){
+    nav{
+        column-gap: 0px;
+    }
+    select{
+        width: 90px!important
+    }
+    #thickness{
+        width: 75px!important
+    }
+    #color{
+        width: 50px;
+        padding: 3px;
+    }
+    button{
+        width: 30px;
+    }
+    button i{
+        text-align: center;
+        padding: 0%;
+        margin: -9px;
+    }
+}
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+
+.content {
+	margin: auto;
+	text-align: center;
+	font-family: 'Goldman', cursive;
+	font-weight: 800;
+	letter-spacing: -0.3333em;
+	background: url(https://images7.alphacoders.com/410/thumb-1920-410661.jpg);
+	background-position: center;
+   background-size: cover;
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+    letter-spacing: 1PX;
+}
