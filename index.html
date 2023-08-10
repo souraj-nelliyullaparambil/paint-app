@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>paint</title>
+    <link rel="icon" href="" />
+    <!-- css -->
+    <link rel="stylesheet" href="paint.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+JWtjQ4t3ZcK36I9Mi5eW6A2G+nm7l5x7ixd6vlP2cPDUpN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="content">
+      <h1 class="text-center">PAINT</h1>
+    </header>
+    <nav class="d-flex ms-4 mb-1 container" >
+      <input type="color" id="color" class="form-control form-control-color "/>
+      <input type="number" id="thickness" value="3" min="0" max="100" class="form-select"/>
+      
+      <select name="type" id="brushType" value="brushType" class="form-select">
+        <option value="round" data-icon="fas fa-heart">round</option>
+        <option value="square">square</option>
+        <option value="butt">butterfly</option>
+      </select>
+
+      <button type="button" id="erase" class="btn btn-outline-success" id="brush" title="Eraser">
+        <i class="fa-solid fa-eraser"></i>
+      </button>
+
+      <button type="button" class="btn btn-outline-success" id="brush" title="Brush">
+        <i class="fa-solid fa-paintbrush fa-sm"></i>
+      </button>
+
+      <button type="button" class="btn btn-outline-success" id="clear" title="clear">
+        <i class="fa-solid fa-delete-left"></i>
+      </button>
+
+   
+    </nav>
+    <canvas id="canvas" style="border: 1px solid black" ></canvas>
+    <!-- //javascript -->
+    <script src="paint.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
