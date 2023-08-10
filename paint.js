@@ -46,6 +46,10 @@ const canvas = document.getElementById("canvas");
       canvas.addEventListener("mousedown", paintingstart);
       canvas.addEventListener("mouseup", paintingEnd);
       canvas.addEventListener("mousemove", draw);
+      // for mobile
+      canvas.addEventListener("touchstart", paintingstart);
+      canvas.addEventListener("touchend", paintingEnd);
+      canvas.addEventListener("touchmove", draw);
 
       document.getElementById("erase").addEventListener("click", function () {
         brushcolor = "white";
